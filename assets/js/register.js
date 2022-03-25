@@ -27,6 +27,15 @@ $('#registerBtn').on('click', function(e){
     var subject = $('#msg_subject').val();
     var message = $('#message').val();
 
+
+    // $('#registerBtn').on('click', function(){
+    //     if(!ref(db, '/portfolio/' + this.dataset.key)){
+    //         alert('Submitted!')
+    //     }else{
+    //         alert('Did you fill in the form properly?')
+    //     }
+    // })
+
     var registerArr = push(registerBranch);
 
     set(registerArr, {
@@ -35,4 +44,6 @@ $('#registerBtn').on('click', function(e){
         subject,
         message
     })
+
+    window.location.reload();
 });

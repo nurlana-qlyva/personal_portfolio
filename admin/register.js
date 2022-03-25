@@ -21,6 +21,7 @@ export{ref, set, push, onValue, update, remove, get};
 const registerBranch = ref(db, '/portfolio');
 
 onValue(registerBranch, function(snapshot){
+    
     var objBanner = snapshot.val();
 
     console.log(objBanner)
